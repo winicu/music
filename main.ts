@@ -192,7 +192,9 @@ list3 = []
 basic.clearScreen()
 basic.forever(function () {
     if (mode == 1) {
-        led.toggle(0, 0)
+        // Temporary, will be removed if the basic mode 2 is done.
+        led.plot(0, 0)
+        led.unplot(0, 0)
         basic.pause(200)
         if (input.buttonIsPressed(Button.A)) {
             mode = 2
