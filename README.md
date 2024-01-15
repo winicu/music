@@ -1,5 +1,6 @@
 
-**Please note that the source update might be delayed from the binary because offline makecode can't save to github**
+**Please note that the source update might be delayed from the binary because offline makecode can't save to github.**
+This page is migrated from old repository with same name.
 
 # Music Editor Micro
 A music editor for micro:bit v2.
@@ -12,7 +13,7 @@ To edit this repository in MakeCode.
 * paste **https://github.com/winicu/music** and click import
 
 To use the project.  
-Download the .hex from release, and import it into microsoft makecode or your micro:bit.
+Download the .hex from [Release](https://github.com/winicu/music/release/), and import it into microsoft makecode or your micro:bit.
 ## Features
 - [x] Edit notes with frequencies from C3~C6  
 - [x] Play notes creates by editing  
@@ -20,7 +21,7 @@ Download the .hex from release, and import it into microsoft makecode or your mi
 - [x] Edit note durations
 - [x] Change tempo
 - [ ] Delete notes
-- [ ] Pattern based editor
+- [ ] Multi-pattern
 
 ## Notes
 Because of the changes, emulator can't run the project.
