@@ -120,7 +120,7 @@ basic.showLeds(`
     `)
 let note_input_hold = 1
 music.setTempo(144)
-let tempo = 144
+let tempo = music.tempo()
 let current_freq = 20
 let current_length = 1
 let note_lengths = [
