@@ -36,13 +36,11 @@ input.onGesture(Gesture.Shake, function () {
         if (mode == 2) {
             current_length += -1
             note_played_in_editor = 0
-            music.play(music.tonePlayable(784, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         }
     } else if (input.buttonIsPressed(Button.B)) {
         if (mode == 2) {
             current_length += 1
             note_played_in_editor = 0
-            music.play(music.tonePlayable(392, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         }
     }
 })
