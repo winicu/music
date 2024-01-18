@@ -22,9 +22,6 @@ function play (freq2: number, length2: number) {
         music.play(music.tonePlayable(note_freqs[freq2], music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
     }
 }
-input.onButtonPressed(Button.AB, function () {
-	
-})
 input.onButtonPressed(Button.B, function () {
     if (mode == 2) {
         current_freq += 1
