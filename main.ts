@@ -113,6 +113,7 @@ basic.showLeds(`
     # # . . #
     # # . # #
     `)
+let pattern2: number[] = []
 let note_input_hold = 1
 music.setTempo(144)
 let tempo = music.tempo()
