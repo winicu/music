@@ -44,6 +44,7 @@ input.onGesture(Gesture.Shake, function () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     if (mode == 1) {
         basic.showIcon(IconNames.EighthNote)
+        music.setTempo(144)
         music.play(music.tonePlayable(392, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         music.play(music.tonePlayable(659, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         music.play(music.tonePlayable(659, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
@@ -77,6 +78,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         music.rest(music.beat(BeatFraction.Quarter))
         music.play(music.tonePlayable(523, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
         basic.clearScreen()
+        music.setTempo(tempo)
     }
     if (mode == 2) {
         if (!(input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B))) {
@@ -106,6 +108,7 @@ let list3: number[] = []
 let note_played_in_editor = 0
 let mode = 0
 let note_freqs: number[] = []
+let tempo = 0
 basic.showLeds(`
     # # . # #
     # . . # .
@@ -116,7 +119,7 @@ basic.showLeds(`
 let pattern2: number[] = []
 let note_input_hold = 1
 music.setTempo(144)
-let tempo = music.tempo()
+tempo = music.tempo()
 let current_freq = 20
 let current_length = 1
 let note_lengths = [
@@ -199,8 +202,8 @@ basic.forever(function () {
                 music.setTempo(156)
                 tempo = 156
             } else if (tempo == 156) {
-                music.setTempo(140)
-                tempo = 140
+                music.setTempo(144)
+                tempo = 144
             }
             basic.showString("" + (tempo))
         }
