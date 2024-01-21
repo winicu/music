@@ -24,7 +24,7 @@ Download the .hex from [Release](https://github.com/winicu/music/release/), and 
 - [ ] Multi-pattern
 
 ## Notes
-Because of the changes, emulator can't run the project.
+To use the program you have to use an physical board of micro:bit v2 in order to use all the function.
 
 ## Edit this project
 
